@@ -1,6 +1,10 @@
 # IT115-A4
 Assignment 4: Github Webpage Project
 
+Timeline: 
+
+10/27 Friday - Most of research done
+
 [Project Document](https://docs.google.com/document/d/1_FpcUmGhpoYznKXcMBRqR-xK26yVamMxy56O3lm8nYk/edit?usp=sharing)
 
 Zoom [Link](https://us05web.zoom.us/j/84258841433?pwd=jEaBVM4yQoZSnmM92DbeF82Kj2EVbL.1)
