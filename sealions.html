@@ -10,6 +10,67 @@
 <body id="sealions">
     <div id="wrapper">
         <h1>Sea Lions</h1>
+        <section>
+            <h2>California Sea Lion</h2>
+            <ul>
+                <li><u>Length:</u> Up to 8 ft</li>
+                <li><u>Weight:</u> Up to 1,000 lbs </li>
+                <li><u>Lifespan:</u> 20-30 years</li>
+                <li><u>Diet:</u> Fish, octopus, squid</li>
+                <li><u>Threats:</u> Conflicts with fisheries, poaching, getting tangled in trash and debris; food availability, pollution, disease </li> 
+                <li><u>Distribution:</u> Mexico, United States, Canada</li>
+                <li><u>Conservation Status:</u> Listed as a Species of Least Concern by the IUCN, protected under the Marine Mammal Protection Act</li>
+                <li><u>Sightings in the Pacific Northwest:</u> Year-round</li>
+            </ul>
+        </section>
+        <br>
+        <hr>
+        <section>
+            <h2>Stellar Sea Lion</h2>
+            <ul>
+                <li><u>Length:</u> Up to 11 ft </li>
+                <li><u>Weight:</u> Up to 2,400 lbs </li>
+                <li><u>Lifespan:</u> 18-25 years</li>
+                <li><u>Diet:</u> Fish, octopus, squid (2)</li>
+                <li><u>Threats:</u> Overfishing of their food sources, climate change, predators, toxic substances and  contaminants, getting accidentally caught by fishers, Illegal shooting, disease and parasites, getting tangled in lost and abandoned fishing gear, illegal feeding  </li> 
+                <li><u>Distribution:</u> Canada (British Columbia), Japan, Russian Federation (Kamchatka, Kuril Is.), United States (Alaska, Aleutian Is., Oregon, Washington, California) </li>
+                <li><u>Conservation Status:</u> Listed as Near Threatened by the IUCN, protected under the Marine Mammal Protection Act </li>
+                <li><u>Sightings in the Pacific Northwest:</u> Year-round, with the most sightings fall through spring</li>
+            </ul>
+        </section>
+        
+        <br>
+        <hr>
+        <br>
+        <button type="button" class="collapsible">Sources</button>
+        <div class="content">
+        <ul>
+            <li><a href="https://myodfw.com/wildlife-viewing/species/seals-and-sea-lions">myodfw.com/wildlife-viewing/species/seals-and-sea-lions</a> </li> 
+            <li><a href="https://www.pacificwhalewatchassociation.com/othermarinemammals">pacificwhalewatchassociation.com/othermarinemammals</a> </li>
+            <li><a href="https://www.iucnredlist.org/species/8239/45225749">iucnredlist.org/species/8239/45225749</a></li> 
+            <li><a href="https://www.fisheries.noaa.gov/species/steller-sea-lion">fisheries.noaa.gov/species/steller-sea-lion</a> </li>
+            <li><a href="https://www.iucnredlist.org/species/41666/45230310">iucnredlist.org/species/41666/45230310</a> </li>
+        </ul>
+        </div>
+    </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+
 
     </div>
 

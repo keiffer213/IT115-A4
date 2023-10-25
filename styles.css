@@ -29,5 +29,33 @@ p {
     margin: 10px 10px;
 }
 
+/* Style for the collapsible button */
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+/* Color when button is clicked or hovered over */
+.active, .collapsible:hover {
+    background-color: #ccc;
+  }
+
+/* Style for the collapsible content */
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
+  
+
 
 
