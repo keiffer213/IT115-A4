@@ -3,8 +3,14 @@
     margin:0;
 }
 
-body#index {
+body#whales {
     background-image: url("images/orcas.jpg");
+    background-size: 1400px;
+    background-attachment:fixed;
+}
+
+body#index {
+    background-image: url("images/index-background.jpg");
     background-size: 1400px;
     background-attachment:fixed;
 }
