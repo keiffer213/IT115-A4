@@ -3,8 +3,31 @@
     margin:0;
 }
 
+body#whales {
+    background-image: url("images/orcas.jpg");
+    background-size: 1400px;
+    background-attachment:fixed;
+}
+
+body#index {
+    background-image: url("images/index-background.jpg");
+    background-size: 1400px;
+    background-attachment:fixed;
+}
+
 div#wrapper {
     margin:0 auto; /* center element */
     width: 940px;
-    background: rgb(212, 212, 212);
+    background: rgba(212, 212, 212, 0.856);
 }
+
+h1, h2, h3 {
+    margin: 15px 10px 15px 10px;
+}
+
+p {
+    margin: 10px 10px;
+}
+
+
+
