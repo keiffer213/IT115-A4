@@ -9,8 +9,81 @@
 <body id="seals">
     <div id="wrapper">
         <h1>Seals</h1>
+        <section>
+            <h2>Harbor Seal</h2>
+            <ul>
+                <li><u>Length:</u> Up to 6 ft </li>
+                <li><u>Weight:</u> Up to 370 lbs </li>
+                <li><u>Lifespan:</u> Up to 25 years</li>
+                <li><u>Diet:</u> Fish, squid, octopus, shellfish </li>
+                <li><u>Threats:</u> Getting tangled in fishing gear, illegal feeding and harassment, habitat loss, chemical contaminants, oil spills and drilling, boat collisions, disturbance, disease </li> 
+                <li><u>Distribution:</u> Canada, Mexico, United States </li>
+                <li><u>Conservation Status:</u> Listed as a Species of Least Concern by the IUCN, protected under the Marine Mammal Protection Act </li>
+                <li><u>Sightings in the Pacific Northwest:</u> Year-round, with pups sighted in summer </li>
+            </ul>
+        </section>
+        <br>
+        <hr>
+        <section>
+            <h2>Northern Elephant Seal</h2>
+            <ul>
+                <li><u>Length:</u> Up to 13 ft </li>
+                <li><u>Weight:</u> Up to 4,500 lbs </li>
+                <li><u>Lifespan:</u> 20 years</li>
+                <li><u>Diet:</u> Squid, deepwater fish, sharks, skates, and rays</li>
+                <li><u>Threats:</u> Getting accidentally caught by fishers, getting tangled in trash and lost or abandoned fishing gear </li> 
+                <li><u>Distribution:</u> Mexico, United States, Canada  </li>
+                <li><u>Conservation Status:</u> Listed as a Species of Least Concern by the IUCN, protected under he Marine Mammal Protection Act  </li>
+                <li><u>Sightings in the Pacific Northwest:</u> Possible sightings year-round, but peak sightings are spring through fall </li>
+            </ul>
+        </section>
+        <br>
+        <hr>
+        <section>
+            <h2>Northern Fur Seal</h2>
+            <ul>
+                <li><u>Length:</u> Up to 7 ft</li>
+                <li><u>Weight:</u> Up to 600lbs </li>
+                <li><u>Lifespan:</u> 18-27 years</li>
+                <li><u>Diet:</u> Fish and squid</li>
+                <li><u>Threats:</u> Entanglement in trash and lost or abandoned fishing gear, overfishing of their food sources, climate change, environmental contaminants, predators  </li> 
+                <li><u>Distribution:</u> North Pacific Ocean and Bering Sea  </li>
+                <li><u>Conservation Status:</u> Listed as Vulnerable on the IUCN Red List and protected by the Marine Mammal Protection Act and Fur Seal Act  </li>
+                <li><u>Sightings in the Pacific Northwest:</u> Year round with peak sightings from spring through fall </li>
+            </ul>
+        </section>
 
+        <br>
+        <hr>
+        <br>
+        <button type="button" class="collapsible">Sources</button>
+        <div class="content">
+        <ul>
+            <li><a href="https://myodfw.com/wildlife-viewing/species/seals-and-sea-lions">myodfw.com/wildlife-viewing/species/seals-and-sea-lions</a> </li> 
+            <li><a href="https://www.pacificwhalewatchassociation.com/othermarinemammals">pacificwhalewatchassociation.com/othermarinemammals</a> </li>
+            <li><a href="https://www.fisheries.noaa.gov/species/harbor-seal">fisheries.noaa.gov/species/harbor-seal</a></li> 
+            <li><a href="https://www.iucnredlist.org/species/13581/45227116">iucnredlist.org/species/13581/45227116</a> </li>
+            <li><a href="https://www.fisheries.noaa.gov/species/northern-fur-seal">fisheries.noaa.gov/species/northern-fur-seal</a> </li>
+            <li><a href="https://www.iucnredlist.org/species/3590/45224953">iucnredlist.org/species/3590/45224953</a> </li>
+        </ul>
+        </div>
     </div>
 
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
 </body>
 </html>
