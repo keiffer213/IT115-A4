@@ -9,9 +9,107 @@
 </head>
 <body id="whales">
     <div id="wrapper">
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="otters.html">Otters</a>
+            <a href="seals.html">Seals</a>
+            <a href="sealions.html">Sea Lions</a>
+            <a class="active" href="whales.html">Whales</a>
+            <a href="dolphins.html">Porpoises</a>
+          </div>
         <h1>Whales</h1>
+        <section>
+            <h2>Humpback Whales</h2>
+            <ul>
+                <li><u>Length:</u> Up to 52 ft </li>
+                <li><u>Weight:</u> Up to 60,000 lbs </li>
+                <li><u>Lifespan:</u> Up to 50 years</li>
+                <li><u>Diet:</u> ??? </li>
+                <li><u>Threats:</u> Entanglement in fishing gear, vessel-based harassment, and underwater noise  </li> 
+                <li><u>Distribution:</u> Humpbacks travel in all oceans around the world and have the longest migration patterns </li>
+                <li><u>Conservation Status:</u> Listed under the endangered species act of 1970 and 1973 </li>
+                <li><u>Sightings in the Pacific Northwest:</u> any reported sightings around the Alki Beach area and up further north in British Columbia. </li>
+            </ul>
+        </section>
+        <br>
+        <hr>
+        <section>
+            <h2>Grey Whales</h2>
+            <ul>
+                <li><u>Length:</u> Up to 49 ft </li>
+                <li><u>Weight:</u> Up to 90,000 lbs </li>
+                <li><u>Lifespan:</u> Up to 60 years</li>
+                <li><u>Diet:</u> Eats up to 2,400 pounds of food a day, including squid, shrimp, and schools of small fish</li>
+                <li><u>Threats:</u> Oil and gas development, fishing gear, and large ships </li> 
+                <li><u>Distribution:</u> Northern Hemisphere, Northern Pacific Ocean  </li>
+                <li><u>Conservation Status:</u> Protected under the Marine Mammal Act, and District Population Segment (DPS). Was once listed under the endangered species act but was unlisted in 1994</li>
+                <li><u>Sightings in the Pacific Northwest:</u> ??? </li>
+            </ul>
+        </section>
+        <br>
+        <hr>
+        <section>
+            <h2>Minke Whale</h2>
+            <ul>
+                <li><u>Length:</u> Up to 35 ft</li>
+                <li><u>Weight:</u> Up to 20,000 lbs </li>
+                <li><u>Lifespan:</u> Up to 50 years</li>
+                <li><u>Diet:</u> Krill and small fish</li>
+                <li><u>Threats:</u> Climate change, vessels, and underground sea noise </li> 
+                <li><u>Distribution:</u> North Pacific Ocean and Bering Sea  </li>
+                <li><u>Conservation Status:</u> Covered under the Marine Mammal Act </li>
+                <li><u>Sightings in the Pacific Northwest:</u> Puget Sound and San Juan Islands </li>
+            </ul>
+        </section>
+        <br>
+        <hr>
+        <section>
+            <h2>Orca Whale</h2>
+            <ul>
+                <li><u>Length:</u> Up to 32 ft</li>
+                <li><u>Weight:</u> Up to 22,000 lbs </li>
+                <li><u>Lifespan:</u> Up to 90 years</li>
+                <li><u>Diet:</u> Fish and squid</li>
+                <li><u>Threats:</u> Food limitations, vessels and vessel disturbances, and chemical contaminants</li> 
+                <li><u>Distribution:</u> North Pacific Ocean and Bering Sea  </li>
+                <li><u>Conservation Status:</u> Protected under the MMPA and the Southern resident population is protected under the ESA and soon to be considered not an endangered species. </li>
+                <li><u>Sightings in the Pacific Northwest:</u> All over the Puget Sound region up to as far as the San Juan Islands and British Colombia</li>
+            </ul>
+        </section>
+
+        <br>
+        <hr>
+        <br>
+        <button type="button" class="collapsible">Sources</button>
+        <div class="content">
+        <ul>
+            <li><a href="https://island-adventures.com/whales-and-wildlife/humpback-whales">island-adventures.com/whales-and-wildlife/humpback-whales</a> </li> 
+            <li><a href="https://en.wikipedia.org/wiki/Gray_whale">wikipedia.org/wiki/Gray_whale</a> </li>
+            <li><a href="https://www.fisheries.noaa.gov/species/killer-whale">fisheries.noaa.gov/species/killer-whale</a></li> 
+            <li><a href="https://www.eopugetsound.org/magazine/minke-whales">eopugetsound.org/magazine/minke-whales</a> </li>
+            <li><a href="https://www.washingtonnature.org/wildlife/orcas">washingtonnature.org/wildlife/orcas</a> </li>
+        </ul>
+        </div>
+    </div>
 
     </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
 
 </body>
 </html>

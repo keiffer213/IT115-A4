@@ -9,9 +9,56 @@
 </head>
 <body id="dolphins">
     <div id="wrapper">
-        <h1>Dolphins</h1>
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="otters.html">Otters</a>
+            <a href="seals.html">Seals</a>
+            <a href="sealions.html">Sea Lions</a>
+            <a href="whales.html">Whales</a>
+            <a class="active" href="dolphins.html">Porpoises</a>
+          </div>
+        <h1>Porpoises</h1>
+        <section>
+            <h2>Harbor Porpoise</h2>
+            <ul>
+                <li><u>Length:</u> Up to 12 ft </li>
+                <li><u>Weight:</u> Up to 120 lbs </li>
+                <li><u>Lifespan:</u> Up to 50 years</li>
+                <li><u>Diet:</u> Krill and small fish </li>
+                <li><u>Threats:</u> Toxins and debris  </li> 
+                <li><u>Distribution:</u> Puget Sound </li>
+                <li><u>Conservation Status:</u> Protected under the Endangered Species Act and the Marine Mammal Act </li>
+                <li><u>Sightings in the Pacific Northwest:</u> Puget Sound, Alki Beach, San Juan Islands, British Colombia </li>
+            </ul>
+        </section>
 
+        <br>
+        <hr>
+        <br>
+        <button type="button" class="collapsible">Sources</button>
+        <div class="content">
+        <ul>
+            <li><a href="https://wdfw.wa.gov/species-habitats/species/phocoena-phocoena">wa.gov/species-habitats/species/phocoena-phocoena</a> </li> 
+        </ul>
+        </div>
     </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
 
 </body>
 </html>

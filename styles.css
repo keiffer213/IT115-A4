@@ -17,8 +17,14 @@ body#index {
 
 div#wrapper {
     margin:0 auto; /* center element */
+    padding-bottom: 20px;
     width: 940px;
     background: rgba(212, 212, 212, 0.856);
+}
+
+ul {
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 h1, h2, h3 {
@@ -29,10 +35,12 @@ p {
     margin: 10px 10px;
 }
 
+/* COLLAPSIBLE BUTTON SYLE */
+
 /* Style for the collapsible button */
 .collapsible {
     background-color: #eee;
-    color: #444;
+    color: black;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -49,13 +57,43 @@ p {
 
 /* Style for the collapsible content */
 .content {
-    padding: 0 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: #ccc;
   }
 
+
+/* NAVIGATION BAR SYLE */
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #eee;
+    overflow: hidden;
+  }
   
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ccc;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: rgba(212, 212, 212, 0.856);
+    color: black;
+  }
 
 
 
