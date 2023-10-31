@@ -3,37 +3,93 @@
     margin:0;
 }
 
-body#whales {
-    background-image: url("images/orcas.jpg");
-    background-size: 1400px;
-    background-attachment:fixed;
-}
-
 body#index {
     background-image: url("images/index-background.jpg");
     background-size: 1400px;
     background-attachment:fixed;
 }
 
+body#otters {
+    background-image: url("images/otters.jpg");
+    background-size: 1400px;
+    background-attachment:fixed;
+}
+
+body#whales {
+    background-image: url("images/orcas.jpg");
+    background-size: 1400px;
+    background-attachment:fixed;
+}
+
+body#seals {
+    background-image: url("images/seal.jpg");
+    background-size: 1400px;
+    background-attachment:fixed;
+}
+
 div#wrapper {
-    margin:0 auto; /* center element */
-    padding-bottom: 20px;
+    margin: 20px auto 20px auto; /* center element */
     width: 940px;
     background: rgba(212, 212, 212, 0.856);
+    padding: 20px 15px;
 }
 
-ul {
-    padding-left: 50px;
-    padding-right: 50px;
+header {
+    background: #eee;
+    padding: 1px;
 }
+
+nav {
+    background: #eef;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+nav ul li a {
+    display: block;
+    float: left;
+    position: relative;
+    background: #eef;
+    padding: 14px 20px;
+    margin: 0 0 10px 0;
+}
+
+nav a:hover {
+    background-color: #ddd;
+}
+
 
 h1, h2, h3 {
-    margin: 15px 10px 15px 10px;
-}
-
-p {
     margin: 10px 10px;
 }
+
+
+p {
+    margin: 10px 0; /* Top Right Bottom Left = 10px 0 10px 0*/
+}
+
+
+li {
+    /* took out padding for ul tag and transferred over to li tag*/
+    margin: 8px 0 8px 25px;
+    list-style: none; /*took out list style to make it look cleaner*/
+}
+
+div.content li {
+    list-style: decimal;
+    margin-left: 50px;
+}
+
+img.left {
+    height: 250px;
+    float:left;
+    margin: 0 10px 10px 0;
+}
+
+hr {
+    clear: both;
+}
+
 
 /* COLLAPSIBLE BUTTON SYLE */
 
@@ -95,5 +151,48 @@ p {
     color: black;
   }
 
+
+
+
+/*  IGNORE THE NEXT SUBSET OF CODE I WAS EXPERIMENTING WITH DROP DOWN
+MENU & HOW IT WOULD  WORK
+ul {
+    list-style: none;
+    background: #224c8c;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: inline-block;
+    padding: 10px 10px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1em;
+
+}
+
+ul.dropdown li{
+    display:block;
+}
+
+ul.dropdown {
+    width: 100%;
+    display: none;
+    z-index: 999;
+    position: absolute;
+}
+
+ul li a:hover {
+    background: #112C66;
+}
+
+ul li:hover ul.dropdown {
+    display:block;
+} */
 
 
